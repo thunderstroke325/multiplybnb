@@ -1,6 +1,6 @@
 import React, {useCallback, useState} from 'react'
 import styled from 'styled-components'
-import { Text, Heading, Card, CardHeader, CardBody, Box, BoxProps, Flex, Button, Grid } from '@pancakeswap/uikit'
+import { Text, Heading, Card, CardBody, Box, BoxProps, Flex, Button, Grid } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useUserinfo } from 'hooks/useMorebnb'
 import { useMorebnb } from 'hooks/useContract'
@@ -8,53 +8,8 @@ import useToast from 'hooks/useToast'
 import { harvestReward } from 'utils/calls/moreb'
 import { getBalanceNumber } from 'utils/formatBalance'
 import CardValue from 'views/Home/components/CardValue'
-import StakeSection from './StakeSection'
 import StakeInner from './StakeInner'
 
-const StyledTable = styled.table`
-//   border-collapse: collapse;
-//   font-size: 14px;
-//   border-radius: 4px;
-//   margin-left: auto;
-//   margin-right: auto;
-  width: 90%;
-  margin: auto;
-`
-
-const TableHead = styled.thead`
-    border-bottom: 1px solid #dee2e6!important;
-    th:last-child{
-        width: 10%;
-        @media (max-width: 767px) {
-            width: 20%;
-        }
-    }
-`
-
-const StyleTh = styled.th`
-    padding: 15px 20px;
-`;
-
-const TableBody = styled.tbody`
-  & tr {
-    td {
-      font-size: 16px;
-      vertical-align: middle;
-    }
-  }
-`
-
-const CellInner = styled.div`
-  padding-top: 15px;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  padding-right: 8px;
-
-  ${({ theme }) => theme.mediaQueries.xl} {
-    padding-right: 32px;
-  }
-`
 const StyledCard = styled(Card)`
   margin: 15px 10px;
   margin-bottom: 0px;
@@ -117,7 +72,6 @@ const StakeCard: React.FC<Props> = ({ header, config, ...props }) => {
     const tWithdrawable = userInfo.fetchStatus === 'success' ? getBalanceNumber(userInfo.info.for_withdraw.toString()) : 0
     const canharvest = tWithdrawable ? tWithdrawable > 0.0035 : false
     const withdrawable = canharvest ? tWithdrawable * 1000000000000000000 : 0
-    console.log("info", tWithdrawable);
 
     const onHarvest = useCallback(async () => {
       if(!canharvest) {

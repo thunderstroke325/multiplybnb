@@ -28,6 +28,7 @@ import {
   getBunnySpecialPredictionAddress,
   getBunnySpecialLotteryAddress,
   getFarmAuctionAddress,
+  getDiceAddress,
 } from 'utils/addressHelpers'
 
 // ABI
@@ -42,6 +43,7 @@ import cakeAbi from 'config/abi/cake.json'
 import oldshivaAbi from 'config/abi/oldshiva.json'
 import exchangeAbi from 'config/abi/exchange.json'
 import morebnbAbi from 'config/abi/morebnb.json'
+import diceAbi from 'config/abi/dice.json'
 import pointCenterIfo from 'config/abi/pointCenterIfo.json'
 import lotteryV2Abi from 'config/abi/lotteryV2.json'
 import masterChef from 'config/abi/masterchef.json'
@@ -96,6 +98,9 @@ export const getExchangeContract = (signer?: ethers.Signer | ethers.providers.Pr
 }
 export const getMoreBnbContract = (signer?: ethers.Signer | ethers.providers.Provider) => {
   return getContract(morebnbAbi, getMoreBnbAddress(), signer)
+}
+export const getDiceContract = (signer?: ethers.Signer | ethers.providers.Provider) => {
+  return getContract(diceAbi, getDiceAddress(), signer)
 }
 export const getProfileContract = (signer?: ethers.Signer | ethers.providers.Provider) => {
   return getContract(profileABI, getPancakeProfileAddress(), signer)

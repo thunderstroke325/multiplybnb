@@ -17,6 +17,9 @@ export const getExchangeAddress= () => {
 export const getMoreBnbAddress= () => {
   return getAddress(addresses.morebnb)
 }
+export const getDiceAddress= () => {
+  return getAddress(addresses.dice)
+}
 export const getOldShivaAddress = () => {
   return getAddress(tokens.oldshiva.address)
 }

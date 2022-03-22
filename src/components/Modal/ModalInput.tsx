@@ -44,7 +44,7 @@ const StyledTokenInput = styled.div<InputProps>`
   
 `
 
-const StyledInput = styled(Input)`
+const InputLayout = styled(Input)`
   box-shadow: none;
   border-radius: 20px;
   border: 2px solid #3c3742;
@@ -115,7 +115,7 @@ const ModalInput: React.FC<ModalInputProps> = ({
           <Text fontSize="14px">{t('Balance: %balance%', { balance: displayBalance(max) })}</Text>
         </Flex>
         <Flex alignItems="flex-end" justifyContent="space-around" style={{background: "#000015"}}>
-          <StyledInput
+          <InputLayout
             pattern={`^[0-9]*[.,]?[0-9]{0,${decimals}}$`}
             inputMode="decimal"
             step="any"

@@ -47,8 +47,11 @@ const Hero = () => {
   return (
     <StyledHero>
       <StyledContainer>
-        <Title>Daughterdoge Referral</Title>
-        <Blurb>Share the referral link below to invite your friends and earn ${commistionrate.toString()}% of your friends&apos; earnings FOREVER!</Blurb>
+        <Title>Play Dice!</Title>
+        <p style={{color: "white"}}>Multiplier</p>
+        <p style={{color: "white"}}>Wage 0.05 - 1BNB</p>
+        <p style={{color: "white"}}>Guess the outcome and win 10X</p>
+        {/* <Blurb>Share the referral link below to invite your friends and earn ${commistionrate.toString()}% of your friends&apos; earnings FOREVER!</Blurb> */}
       </StyledContainer>
     </StyledHero>
   )

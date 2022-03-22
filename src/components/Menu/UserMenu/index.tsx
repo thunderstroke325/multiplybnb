@@ -1,5 +1,6 @@
 import React from 'react'
 import { useWeb3React } from '@web3-react/core'
+import styled from 'styled-components'
 import {
   Flex,
   LogoutIcon,
@@ -7,6 +8,8 @@ import {
   UserMenu as UIKitUserMenu,
   UserMenuDivider,
   UserMenuItem,
+  Text,
+  Link
 } from '@pancakeswap/uikit'
 import useAuth from 'hooks/useAuth'
 import { useProfile } from 'state/profile/hooks'
@@ -28,12 +31,33 @@ const UserMenu = () => {
   const hasProfile = isInitialized && !!profile
   const avatarSrc = profile && profile.nft ? `/images/nfts/${profile.nft.images.sm}` : undefined
   const hasLowBnbBalance = fetchStatus === FetchStatus.SUCCESS && balance.lte(LOW_BNB_BALANCE)
-
+  const StyledLink = styled(Link)`
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  `;
   if (!account) {
-    return <ConnectWalletButton scale="sm" />
+    return (
+    <>
+      <StyledLink mr="16px" href="/invest" style={{width: "100px"}}>
+        <Text color="background" style={{fontSize: "20px", color: "white"}}>Invest</Text>
+      </StyledLink>
+      <StyledLink mr="16px" href="/dice" style={{width: "100px"}}>
+        <Text color="background" style={{fontSize: "20px", color: "white"}}>Dice</Text>
+      </StyledLink>
+      <ConnectWalletButton scale="sm" />
+    </>
+    )
   }
 
   return (
+    <>
+      <StyledLink mr="16px" href="/invest" style={{width: "100px"}}>
+        <Text color="background" style={{fontSize: "20px", color: "white"}}>Invest</Text>
+      </StyledLink>
+      <StyledLink mr="16px" href="/dice" style={{width: "100px"}}>
+        <Text color="background" style={{fontSize: "20px", color: "white"}}>Dice</Text>
+      </StyledLink>
     <UIKitUserMenu account={account} avatarSrc={avatarSrc}>
       <WalletUserMenuItem hasLowBnbBalance={hasLowBnbBalance} onPresentWalletModal={onPresentWalletModal} />
       {/* <UserMenuDivider />
@@ -50,6 +74,7 @@ const UserMenu = () => {
         </Flex>
       </UserMenuItem>
     </UIKitUserMenu>
+    </>
   )
 }
 

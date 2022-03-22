@@ -19,6 +19,7 @@ import history from './routerHistory'
 const Home = lazy(() => import('./views/Home'))
 const Dashbaord = lazy(() => import('./views/Farms'))
 const NotFound = lazy(() => import('./views/NotFound'))
+const Dice = lazy(() => import('./views/Dice'))
 
 // This config is required for number formatting
 BigNumber.config({
@@ -41,6 +42,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/invest">
               <Dashbaord />
+            </Route>
+            <Route path="/dice">
+              <Dice />
             </Route>
 
             {/* 404 */}

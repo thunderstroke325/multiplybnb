@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Text, Button } from '@pancakeswap/uikit'
+import { Link, Text, Button, Flex } from '@pancakeswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 
@@ -19,8 +19,8 @@ const BlockButton = styled(Button)`
   margin-left: 5px;
   height: 56px;
   padding: 0;
+  width: 180px;
   margin: auto;
-  width: 300px;
   border-radius: 28px;
   @media (max-width: 742px) {
     width: 80%;
@@ -32,6 +32,10 @@ const BlockButton = styled(Button)`
   ${({ theme }) => theme.mediaQueries.sm} {
     margin: 5px;
     max-width: 400px;
+    width: 150px;
+  }
+  ${({ theme }) => theme.mediaQueries.md} {
+    width: 240px;
   }
 `;
 
@@ -46,17 +50,19 @@ const ButtonGroup = () => {
 
   return (
     <ButtonSection>
-      <BlockButton scale="md">
-        <StyledLink mr="16px" href="/invest">
-          <Text color="background" style={{fontSize: "20px"}}>{t('Invest')}</Text>
-        </StyledLink>
-      </BlockButton>
+      <Flex>
+        <BlockButton scale="md">
+          <StyledLink mr="16px" href="/invest">
+            <Text color="background" style={{fontSize: "20px"}}>{t('Invest')}</Text>
+          </StyledLink>
+        </BlockButton>
 
-      {/* <BlockButton scale="md" >
-      <StyledLink mr="16px" href="https://docs.multiplymybnb.com" external>
-        <Text color="background">{t('Information')}</Text>
-      </StyledLink>
-      </BlockButton> */}
+        <BlockButton scale="md" >
+          <StyledLink mr="16px" href="/dice">
+            <Text color="background"style={{fontSize: "20px"}}>{t('Play')}</Text>
+          </StyledLink>
+        </BlockButton>
+      </Flex>
 
       {/* <BlockButton scale="md">
       <StyledLink mr="16px" href="https://bscscan.com/address/0xAC0f7E47c8BC00feEe5B71F8d9d39dB08785fAD3#code" external>

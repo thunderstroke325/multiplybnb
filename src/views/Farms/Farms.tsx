@@ -32,33 +32,9 @@ const Farms: React.FC = () => {
 
   return (
     <>
-      {/* <PageHeader>
-        <StyledFlex justifyContent="space-between">
-          <Flex flex="1" flexDirection="column" mr={['0', null, '8px']} ml={['0', null, '8px']}  mt="20px" width="100%">
-            <BountyCard />
-          </Flex>
-          <Flex flex="2" flexDirection="column" mr={['0', null, '8px']} ml={['0', null, '8px']}  mt="20px">
-            <ReferralCard />
-          </Flex>
-        </StyledFlex>
-      </PageHeader> */}
       <StyledPage>
-          <StakeCard header={t('Invest BNB')} config={config(t)} m="auto" />
-          {/* <Box  maxWidth="888px" m="auto">
-            <Card mt="30px">
-            <CardHeader>
-              <Heading scale="lg" color="secondary">
-                {t('Read before use')}
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <Text>
-                {t('The principal deposit cannot be withdrawn, the only return users can get are daily dividends and referral rewards. Payments is possible only if contract balance have enough BNB. Please analyze the transaction history and balance of the smart contract before investing. High risk - high profit, DYOR')}
-              </Text>
-            </CardBody>
-          </Card>
-          </Box> */}
-          <Footer />
+        <StakeCard header={t('Invest BNB')} config={config(t)} m="auto" />
+        <Footer />
       </StyledPage>
     </>
   )

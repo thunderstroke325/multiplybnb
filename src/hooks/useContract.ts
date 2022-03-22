@@ -7,6 +7,7 @@ import {
   getMasterchefContract,
   getErc721Contract,
   getChainlinkOracleContract,
+  getDiceContract,
 } from 'utils/contractHelpers'
 import { getMulticallAddress } from 'utils/addressHelpers'
 
@@ -47,6 +48,11 @@ export const useCake = () => {
 export const useMorebnb = () => {
   const { library } = useActiveWeb3React()
   return useMemo(() => getMoreBnbContract(library.getSigner()), [library])
+}
+
+export const useDice = () => {
+  const { library } = useActiveWeb3React()
+  return useMemo(() => getDiceContract(library.getSigner()), [library])
 }
 
 export const useMasterchef = () => {

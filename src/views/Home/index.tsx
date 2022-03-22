@@ -61,8 +61,26 @@ const Home: React.FC = () => {
             <Text fontSize="20px" color="#fff" >
               {t('Experimental Yield Farm on Binance Smart Chain')}
             </Text>
+            <Text fontSize="20px" color="textSubtle" >
+              {t('- 0.01 BNB Min Investment')}
+            </Text>
+            <Text fontSize="20px" color="textSubtle" >
+              {t('- 10% Daily rewards')}
+            </Text>
+            <Text fontSize="20px" color="textSubtle" >
+              {t('- 20 Day 200% ROI')}
+            </Text>
+            <Text fontSize="20px" color="textSubtle" >
+              {t('- 0.0035 BNB Minimum Withdrawal')}
+            </Text>
+            <Text fontSize="20px" color="textSubtle" >
+              {t('- Withdraw Anytime')}
+            </Text>
+            <Text fontSize="20px" color="textSubtle" >
+              {t('- 100% availability : 70% withdraw 30% auto reinvested for sustainability and anti whale functions')}
+            </Text>
             <Text fontSize="20px" color="textSubtle"  mb="20px">
-              {t('Daily Interest Upto 10%')}
+              {t('- 3 BNB max withdrawal per transaction')}
             </Text>
           </Hero>
           <TokenUpdater />

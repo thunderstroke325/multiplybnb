@@ -87,4 +87,8 @@ export default {
     56: '0x13f3bc9dd5c93e9a11779f269ca27fe890ed45d1', /* 0x91f562f77a540769f022D6B775393f264A10c096 */
     97: '0x625b5Ea56b8f856fE3f675Ce39bFD0acfe2164F8',
   },
+  dice: {
+    56: '0x1a89a627cf5966a04b133b8a4fc65ae845a0c3c9',
+    97: '',
+  },
 }

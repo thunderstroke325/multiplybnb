@@ -16,41 +16,6 @@ interface StakeInnerProps extends FlexProps {
   total?: number
 }
 
-const StyledModal = styled(Modal)`
-  width: 565px;
-  & > :nth-child(2) {
-    padding: 0;
-  }
-  @media (max-width: 600px) {
-    width: 90%;
-  }
-`
-
-const StyledTable = styled.table`
-  width: 90%;
-  margin: auto;
-`
-
-const TableHead = styled.thead`
-    border-bottom: 1px solid #dee2e6!important;
-`
-
-const StyleTh = styled.th`
-    padding: 15px 20px;
-    vertical-align: middle;
-`;
-
-const TableBody = styled.tbody`
-  & tr {
-    td {
-      padding: 15px 20px;
-      font-size: 16px;
-      vertical-align: middle;
-      text-align: center;
-    }
-  }
-`
-
 const StakeInner: React.FC<StakeInnerProps> = ({ days, pdaily, pid, total }) => {
   const [expected, setExpected] = useState(0)
   const [val, setVal] = useState('')
