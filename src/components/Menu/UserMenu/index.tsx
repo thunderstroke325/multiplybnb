@@ -10,7 +10,7 @@ import {
   UserMenuItem,
   Text,
   Link
-} from '@pancakeswap/uikit'
+} from '@multiplybnb/uikit'
 import useAuth from 'hooks/useAuth'
 import { useProfile } from 'state/profile/hooks'
 import ConnectWalletButton from 'components/ConnectWalletButton'

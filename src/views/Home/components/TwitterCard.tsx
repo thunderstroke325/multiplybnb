@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Heading, Text } from '@pancakeswap/uikit'
+import { Card, CardBody, Heading, Text } from '@multiplybnb/uikit'
 import styled from 'styled-components'
 import { Timeline } from 'react-twitter-widgets'
 import { useTranslation } from 'contexts/Localization'

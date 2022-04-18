@@ -1,4 +1,4 @@
-import { Box, Table, Th, Td } from '@pancakeswap/uikit'
+import { Box, Table, Th, Td } from '@multiplybnb/uikit'
 import React from 'react'
 import styled from 'styled-components'
 import useRollInfo, { useRollIndex } from 'hooks/useDice'

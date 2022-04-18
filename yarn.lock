@@ -2603,9 +2603,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap/uikit@^0.49.1":
+"@multiplybnb/uikit@^0.49.1":
   version "0.49.1"
-  resolved "https://registry.yarnpkg.com/@pancakeswap/uikit/-/uikit-0.49.1.tgz#35e43387de14e906b1ca553cd2de360d7f1665a9"
+  resolved "https://registry.yarnpkg.com/@multiplybnb/uikit/-/uikit-0.49.1.tgz#35e43387de14e906b1ca553cd2de360d7f1665a9"
   integrity sha512-OOMzHG4TcLZNUjKQbHv6mZtPHUqtydVasq37S+a6ytAwjbeWBmuACkC95s+s7IBX1bcCs7x0dojLQzgmeRbfgA==
   dependencies:
     "@popperjs/core" "^2.9.2"

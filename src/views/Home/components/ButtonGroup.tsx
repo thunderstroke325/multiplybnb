@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Text, Button, Flex } from '@pancakeswap/uikit'
+import { Link, Text, Button, Flex } from '@multiplybnb/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 

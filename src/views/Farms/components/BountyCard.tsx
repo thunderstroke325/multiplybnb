@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
-import {  AutoRenewIcon, Card, CardBody, Text, Flex, Button, Heading, useModal } from '@pancakeswap/uikit'
+import {  AutoRenewIcon, Card, CardBody, Text, Flex, Button, Heading, useModal } from '@multiplybnb/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useToast from 'hooks/useToast'
 import { getBalanceNumber } from 'utils/formatBalance'

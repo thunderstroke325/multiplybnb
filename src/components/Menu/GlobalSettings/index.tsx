@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, IconButton, CogIcon, useModal, Link, Text } from '@pancakeswap/uikit'
+import { Flex, IconButton, CogIcon, useModal, Link, Text } from '@multiplybnb/uikit'
 import styled from 'styled-components'
 import SettingsModal from './SettingsModal'
 

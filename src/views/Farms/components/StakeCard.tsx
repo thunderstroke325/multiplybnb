@@ -1,6 +1,6 @@
 import React, {useCallback, useState} from 'react'
 import styled from 'styled-components'
-import { Text, Heading, Card, CardBody, Box, BoxProps, Flex, Button, Grid } from '@pancakeswap/uikit'
+import { Text, Heading, Card, CardBody, Box, BoxProps, Flex, Button, Grid } from '@multiplybnb/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useUserinfo } from 'hooks/useMorebnb'
 import { useMorebnb } from 'hooks/useContract'

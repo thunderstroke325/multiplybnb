@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Heading, CardHeader, CardBody, Text, Flex, Box, Grid } from '@pancakeswap/uikit'
+import { Card, Heading, CardHeader, CardBody, Text, Flex, Box, Grid } from '@multiplybnb/uikit'
 import styled from 'styled-components'
 import Page from 'components/Layout/Page'
 import { useTranslation } from 'contexts/Localization'

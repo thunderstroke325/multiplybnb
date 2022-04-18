@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Heading, Text, Image } from '@pancakeswap/uikit'
+import { Card, CardBody, Heading, Text, Image } from '@multiplybnb/uikit'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalDividends } from 'hooks/useDividend'

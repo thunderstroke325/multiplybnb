@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Tag, Flex, Heading } from '@pancakeswap/uikit'
+import { Tag, Flex, Heading } from '@multiplybnb/uikit'
 import { NofeeTag } from 'components/Tags'
 import { Token } from 'config/constants/types'
 import { TokenPairImage, TokenImage } from 'components/TokenImage'

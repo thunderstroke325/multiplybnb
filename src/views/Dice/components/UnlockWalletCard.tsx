@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody, Text } from '@pancakeswap/uikit'
+import { Card, CardBody, Text } from '@multiplybnb/uikit'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 
 const StyledCardBody = styled(CardBody)`

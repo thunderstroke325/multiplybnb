@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, useWalletModal, WalletFilledIcon } from '@pancakeswap/uikit'
+import { Button, useWalletModal, WalletFilledIcon } from '@multiplybnb/uikit'
 import useAuth from 'hooks/useAuth'
 import { useTranslation } from 'contexts/Localization'
 

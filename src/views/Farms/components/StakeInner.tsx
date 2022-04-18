@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js'
 import React, { useState, useMemo, useCallback } from 'react'
 import styled from 'styled-components'
-import { Modal, Flex, useModal, FlexProps, Text, IconButton, CalculateIcon, Box } from '@pancakeswap/uikit'
+import { Modal, Flex, useModal, FlexProps, Text, IconButton, CalculateIcon, Box } from '@multiplybnb/uikit'
 import { ModalInput } from 'components/Modal'
 import RoiCalculatorModal from 'components/RoiCalculatorModal'
 import { useTranslation } from 'contexts/Localization'

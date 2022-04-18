@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Cookies from 'universal-cookie';
 import { useQueryParam, StringParam } from 'use-query-params';
-import { Text, Image, Flex, Heading } from '@pancakeswap/uikit'
+import { Text, Image, Flex, Heading } from '@multiplybnb/uikit'
 import { TokenUpdater } from 'state/info/updaters'
 import Page from 'components/Layout/Page'
 

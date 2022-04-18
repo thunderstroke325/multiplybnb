@@ -1,6 +1,6 @@
 import React, { lazy } from 'react'
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
-import { ResetCSS } from '@pancakeswap/uikit'
+import { ResetCSS } from '@multiplybnb/uikit'
 import { QueryParamProvider } from 'use-query-params';
 import BigNumber from 'bignumber.js'
 import { usePollFarmsData } from 'state/farms/hooks'

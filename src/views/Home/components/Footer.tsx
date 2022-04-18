@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import useActiveWeb3React from 'hooks/useActiveWeb3React';
-import { Flex, Text, LinkExternal, Image } from '@pancakeswap/uikit'
+import { Flex, Text, LinkExternal, Image } from '@multiplybnb/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { BASE_URL } from 'config';
 import CopyAddress from 'components/Menu/UserMenu/CopyAddress'

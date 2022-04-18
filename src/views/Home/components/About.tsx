@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Grid, Image, Link, Text } from '@pancakeswap/uikit'
+import {  Grid, Image, Link, Text } from '@multiplybnb/uikit'
 import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'

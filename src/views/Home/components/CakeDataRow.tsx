@@ -4,7 +4,7 @@ import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import { getCakeAddress } from 'utils/addressHelpers'
 import { getBalanceNumber, formatLocalisedCompactNumber } from 'utils/formatBalance'
 import { usePriceCakeBusd, useTotalValue } from 'state/farms/hooks'
-import { Flex, Text, Heading, Skeleton } from '@pancakeswap/uikit'
+import { Flex, Text, Heading, Skeleton } from '@multiplybnb/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Balance from 'components/Balance'
 

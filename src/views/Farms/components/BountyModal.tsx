@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Modal, Text, Flex } from '@pancakeswap/uikit'
+import { Modal, Text, Flex } from '@multiplybnb/uikit'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useUserinfo } from 'hooks/useMorebnb'
 import useTheme from 'hooks/useTheme'

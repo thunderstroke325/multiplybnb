@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import BigNumber from 'bignumber.js'
-import {  Card,  CardBody,  Text,  Flex } from '@pancakeswap/uikit'
+import {  Card,  CardBody,  Text,  Flex } from '@multiplybnb/uikit'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTranslation } from 'contexts/Localization'
 import { formatAmount } from 'views/Info/utils/formatInfoNumbers'

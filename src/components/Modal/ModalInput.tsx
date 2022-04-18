@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Text, Button, Input, InputProps, Flex } from '@pancakeswap/uikit'
+import { Text, Button, Input, InputProps, Flex } from '@multiplybnb/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { stake } from 'utils/calls/moreb'
 import { useMorebnb } from 'hooks/useContract'

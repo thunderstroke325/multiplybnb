@@ -1,4 +1,4 @@
-import { Flex, Image, Td } from '@pancakeswap/uikit'
+import { Flex, Image, Td } from '@multiplybnb/uikit'
 import React from 'react'
 import styled from 'styled-components'
 import useRollInfo, { useRollIndex } from 'hooks/useDice'

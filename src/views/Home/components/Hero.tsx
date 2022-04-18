@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import { usePriceCakeBusd, useTotalValue } from 'state/farms/hooks'
-import { Flex, Heading, Link, Button, Text, Skeleton } from '@pancakeswap/uikit'
+import { Flex, Heading, Link, Button, Text, Skeleton } from '@multiplybnb/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
 import ConnectWalletButton from 'components/ConnectWalletButton'

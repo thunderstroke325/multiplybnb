@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Grid, Text } from '@pancakeswap/uikit'
+import { Card, CardBody, Grid, Text } from '@multiplybnb/uikit'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { usePollCoreFarmData, usePriceBnbBusd } from 'state/farms/hooks'
